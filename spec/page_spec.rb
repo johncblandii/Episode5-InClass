@@ -1,6 +1,4 @@
-require 'rspec'
-require_relative '../db/setup'
-require_relative "../models/page"
+require_relative "spec_helper"
 
 describe Page do 
 	it "should know if it's at the end of the road" do

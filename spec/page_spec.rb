@@ -10,8 +10,9 @@ describe Page do
 
 	context "#options" do
 		subject{ Page.create }
-		let(:option_a){option_a = Page.create(parent_id: subject.id) }
-		let(:option_b){option_a = Page.create(parent_id: subject.id) }
+		let(:option_a){ Page.create(parent_id: subject.id) }
+		let(:option_b){ Page.create(parent_id: subject.id) }
+		let(:option_c){ Page.create(parent_id: subject.id) }
 		it "should have options for the next pages" do
 			subject.options.should eq([option_a, option_b])
 		end

@@ -1,0 +1,6 @@
+adapter: postgresql
+database: adventures
+host: localhost
+username:  johncblandii
+encoding: utf8
+pool: 5
